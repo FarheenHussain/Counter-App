@@ -45,10 +45,19 @@ var helper = ( function(state)
         return newCounter;
     }
 
+
+    //return {
+    //    reset: reset,
+    //    increment: increment,
+    //    decrement: decrement
+    //};
+
+    // If the key name is the same as value name, 
+    // then we can simply write it as this-
     return {
-        reset: reset,
-        increment: increment,
-        decrement: decrement
+        reset,
+        increment,
+        decrement
     };
 
 } )(state);
